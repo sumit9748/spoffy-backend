@@ -1,11 +1,10 @@
 {
   "name": "connect",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "engines": {
     "node": "16.16.0",
-    "npm":"8.16.0"
+    "npm": "8.16.0"
   },
   "scripts": {
     "start": "node index.js",
@@ -28,5 +27,8 @@
     "passport-google-oauth": "^2.0.0",
     "path": "^0.12.7",
     "stripe": "^8.191.0"
-  }
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
 }
