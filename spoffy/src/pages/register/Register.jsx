@@ -1,5 +1,5 @@
 import "./register.css"
-import { useState } from "react";
+import { useState, React } from "react";
 import { useHistory } from "react-router-dom";
 import { publicRequest } from "../../requestMethod";
 import FormInput from "./FormInput";

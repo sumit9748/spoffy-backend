@@ -2,6 +2,8 @@ import "./product.css"
 import StarBorderIcon from '@mui/icons-material/StarBorder';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import { useState } from "react";
+import React from "react";
+
 import { Link } from "react-router-dom";
 import { orange } from "@mui/material/colors";
 import FavoriteIcon from '@mui/icons-material/Favorite';

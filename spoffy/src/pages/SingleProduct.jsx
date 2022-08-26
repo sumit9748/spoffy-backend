@@ -8,6 +8,7 @@ import Newsletter from "../components/Newsletter";
 import { useRef, useState } from "react";
 import { useLocation } from "react-router";
 import axios from "axios";
+import React from "react";
 import { useEffect } from "react";
 import { publicRequest } from "../requestMethod";
 import { addProduct } from "../redux/cartRedux";
