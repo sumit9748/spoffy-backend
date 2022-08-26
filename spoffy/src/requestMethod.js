@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:5000/connect";
+const BASE_URL = "https://spoffyresturent.herokuapp.com/connect";
 
 
 const user = JSON.parse(localStorage.getItem("persist:root"))?.user;
