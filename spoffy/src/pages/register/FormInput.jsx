@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, React } from "react";
 import "./formInput.css";
 
 const FormInput = (props) => {
