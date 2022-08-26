@@ -4,6 +4,8 @@ import { Register } from "./pages/register/Register";
 import { Login } from "./pages/Login";
 import { Cart } from "./pages/Cart";
 import { ProductList } from "./pages/ProductList";
+import React from "react";
+
 import {
   BrowserRouter as Router,
   Switch,
