@@ -25,16 +25,20 @@ const userSchema = new mongoose.Schema({
     },
     profileImg: {
         type: String,
+        default: ""
     },
     address: {
         type: String,
         max: 30,
+        default: ""
     },
     birthday: {
-        type: Date,
+        type: String,
+        default: "11 - 10 - 2000"
     },
     fauvorite: {
         type: Array,
+        default: []
     }
 },
     { timestamps: true }
