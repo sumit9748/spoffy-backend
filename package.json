@@ -26,9 +26,9 @@
     "passport": "^0.5.2",
     "passport-google-oauth": "^2.0.0",
     "path": "^0.12.7",
+    "react-scripts": "^5.0.1",
     "stripe": "^8.191.0"
   },
-  "devDependencies": {},
   "keywords": [],
   "description": ""
 }
