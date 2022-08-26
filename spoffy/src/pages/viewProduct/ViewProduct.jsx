@@ -1,6 +1,6 @@
 import "./viewProduct.css"
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, React } from "react";
 import { userRequest, publicRequest } from "../../requestMethod";
 import { useLocation } from "react-router-dom";
 import CartItem from "../../components/cartItem/CartItem";
