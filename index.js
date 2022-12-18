@@ -8,14 +8,12 @@ const resturentRoute = require("./routes/resturent");
 const cartRoute = require("./routes/cart");
 const orderRoute = require("./routes/order");
 
-
 const stripeRoute = require("./routes/stripe");
-
 const multer = require("multer");
 const cors = require("cors");
 const path = require("path");
 const cookieSession = require("cookie-session");
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8000;
 
 dotenv.config();
 
@@ -27,12 +25,12 @@ mongoose
   });
 
 app.use("/images", express.static(path.join(__dirname, "public/images")));
-app.use(cors({
-  origin: "*",
-  methods: "GET,POST,PUT,DELETE",
-})
+app.use(
+  cors({
+    origin: "*",
+    methods: "GET,POST,PUT,DELETE",
+  })
 );
-
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
@@ -54,7 +52,6 @@ app.post("/connect/upload", upload.single("file"), (req, res) => {
 
 app.use(express.json());
 
-
 app.use("/connect/auth", authRoute);
 app.use("/connect/users", userRoute);
 app.use("/connect/resturents", resturentRoute);
@@ -62,14 +59,12 @@ app.use("/connect/carts", cartRoute);
 app.use("/connect/orders", orderRoute);
 app.use("/connect/checkout", stripeRoute);
 
-
-
 if (process.env.NODE_ENV == "production") {
   app.use(express.static("spoffy/build"));
   const path = required("path");
   app.get("*", (req, res) => {
-    res.sendFile(path.resole(__dirname, 'spoffy', 'build', 'index.html'));
-  })
+    res.sendFile(path.resole(__dirname, "spoffy", "build", "index.html"));
+  });
 }
 app.listen(PORT, () => {
   console.log("Backend server is running!");
