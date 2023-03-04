@@ -59,13 +59,6 @@ app.use("/connect/carts", cartRoute);
 app.use("/connect/orders", orderRoute);
 app.use("/connect/checkout", stripeRoute);
 
-if (process.env.NODE_ENV == "production") {
-  app.use(express.static("spoffy/build"));
-  const path = require("path");
-  app.get("*", (req, res) => {
-    res.sendFile(path.resole(__dirname, "spoffy", "build", "index.html"));
-  });
-}
 app.listen(PORT, () => {
   console.log("Backend server is running!");
 });
